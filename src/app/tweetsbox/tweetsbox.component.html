@@ -1,0 +1,13 @@
+<div class="row">
+    <div class="col-sm-3" *ngFor="let tweetsBox of tweetsBoxes">
+        <div class="card">
+          <div class="card-header">{{ tweetsBox.headerTitle }}</div>
+          <div class="card-body">
+              <ul class="list-group" *ngFor="let tweet of tweetsBox.tweets">
+                <li class="list-group-item">{{ tweet }}</li>
+              </ul>
+          </div> 
+          <div class="card-footer">more...</div>
+        </div>
+    </div>
+</div>
